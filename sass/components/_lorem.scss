@@ -11,9 +11,17 @@
     }
 
     .lorem__title {
+        font-family: get-font(primary);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        
         width: 450px;
         text-align: center;
         justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        
     }
 
     .lorem__text {
@@ -46,6 +54,15 @@
         gap: 30px;
     }
 
+    .lorem__title {
+        font-family: get-font(primary);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        
+    }
     .lorem__text {
         width: 354px;
     }
@@ -78,6 +95,15 @@
 
     .section--lorem {
         padding-bottom: 0px;
+    }
+
+    .lorem__title {
+        font-family: get-font(primary);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 30px;
+        margin-bottom: 10px;
     }
 
     .lorem__text {

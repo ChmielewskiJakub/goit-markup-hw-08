@@ -56,7 +56,9 @@
 
 <!-- ============= Header - Menue Mobile ============= -->
     <div class="js-menu-container">
-        <button type="button"  class="js-close-menu">X</button>
+        <button type="button"  class="js-close-menu"><svg class="menu__open-btn">
+          <use href="images/icons.svg#icon-X"></use>
+        </svg></button>
       <nav>
         <ul class="mobile-nav">
           <li><a href="index.html" class="mobile-nav__item">Agencja</a></li>
@@ -102,15 +104,15 @@
             <form name="signup_form" autocomplete="on">
               <label>
                 <span class="form__text">Imię</span>
-                <input type="text" name="name" class="form__box" />
+                <input type="text" name="name" class="form__box" required />
                 <svg class="form__icon form__icon--name">
-                  <use xlink:href="images/icons.svg#icon-icon_person"></use>
+                  <use xlink:href="images/icons.svg#icon-person"></use>
                 </svg>
               </label>
 
               <label>
                 <span class="form__text">Telefon</span>
-                <input type="tel" name="phone_number" class="form__box" />
+                <input type="tel" name="phone_number" class="form__box" required />
                 <svg class="form__icon form__icon--phone">
                   <use xlink:href="images/icons.svg#icon-smartphone"></use>
                 </svg>
@@ -118,9 +120,9 @@
 
               <label>
                 <span class="form__text">E-mail</span>
-                <input type="email" name="email" class="form__box" />
+                <input type="email" name="email" class="form__box" required />
                 <svg class="form__icon form__icon--mail">
-                  <use xlink:href="images/icons.svg#icon-icon_send"></use>
+                  <use xlink:href="images/icons.svg#icon-send"></use>
                 </svg>
               </label>
 
@@ -133,7 +135,7 @@
                 <span class="checkbox__text">Oświadczam iż akceptuję <a href class="checkbox__link">Regulamin</a> i
                   <a href class="checkbox__link">Politykę Prywatności</a>.</span>
                 <input type="checkbox" name="statute"
-                  value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności." />
+                  value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności." required />
 
                 <span class="checkbox__checkmark">
                   <svg class="checkbox__icon">
@@ -505,6 +507,7 @@
         </ul>
       </div>
     </section>
+    
   </main>
 <!-- ============= Footer ============= -->
   <footer>
@@ -575,6 +578,14 @@
     </div>
   </footer>
   <!-- ============= Script ============= -->
+
+  <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous">
+  </script>
+
   <script src="./js/modal.js"></script>
   <script src="js/mobile-menu.js"></script>
 </body>

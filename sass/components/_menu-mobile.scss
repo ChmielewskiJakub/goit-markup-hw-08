@@ -22,24 +22,23 @@
   }
   .js-close-menu {
     background: get-bg-color(basic-background);
+    padding-left: 436px;
+    cursor: pointer;
   }
   .js-open-menu {
     background: get-bg-color(basic-background);
     height: 60px;
     padding-top: 10px;
     padding-bottom: 10px;
+    cursor: pointer;
   }
   .menu__button-icon {
     fill: get-color(dark-text);
     border: none;
-    height: 18.666669845581055px;
-    width: 18.666669845581055px;
-    margin-top: 21px;
-    margin-left: 396px;
-    margin-right: 25.33px;
+    
     &:hover,
     &:focus {
-      fill: get-color(action);
+      fill: get-color(action); 
     }
   }
   .mobile-nav__item {

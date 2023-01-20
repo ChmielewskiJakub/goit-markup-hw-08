@@ -1,0 +1,178 @@
+
+.team__title {
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+}
+.socials__icons--team {
+    width: 40px;
+    height: 40px;
+}
+
+// ============= Mobile =============
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .team {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        background-color: get-bg-color(secondary-bg);
+        
+    }
+
+    .team__name-title {
+        font-family: get-font(primary);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        padding-top: 20px;
+        letter-spacing: 0.03em;
+    }
+    .team__subtitle {
+        color: get-color(contact);
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .team__figure {
+        box-shadow: 0px 1px 3px get-color(dark-shade), 0px 1px 1px get-color(dark-shade), 0px 2px 1px get-color(dark-shade);
+        border-radius: 0px 0px 4px 4px;
+        background-color: get-bg-color(basic-background);
+    }
+    .team__socials {
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .socials__icons--team{
+        fill: get-color(contact);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: background-color;
+      
+        &:hover,
+        &:focus {
+          background-color: get-color(action);
+          fill: get-color(light-text);
+        }
+    }
+}
+
+// ============= Tablet =============
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .team {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        background-color: get-bg-color(secondary-bg);
+    }
+
+    .team__thumb {
+        display: flex;
+        flex-direction: column;
+    }
+    .team__name-title {
+        font-family: get-font(primary);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        padding-top: 20px;
+        letter-spacing: 0.03em;
+    }
+    .team__subtitle {
+        color: get-color(contact);
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .team__figure {
+        box-shadow: 0px 1px 3px get-color(dark-shade) , 0px 1px 1px get-color(dark-shade) , 0px 2px 1px get-color(dark-shade) ;
+        border-radius: 0px 0px 4px 4px;
+        background-color: get-bg-color(basic-background);
+        
+    }
+    .team__socials {
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .socials__icons--team{
+        fill: get-color(contact);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: background-color;
+      
+        &:hover,
+        &:focus {
+          background-color: get-color(action);
+          fill: get-color(light-text);
+        }
+    }
+}
+
+// ============= Desktop =============
+@media screen and (min-width: 1200px) {
+
+    .team {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        background-color: get-bg-color(secondary-bg);
+    }
+
+    .team__thumb {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team__name-title {
+        font-family: get-font(primary);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        padding-top: 20px;
+        letter-spacing: 0.03em;
+    }
+    .team__subtitle {
+        color: get-color(contact);
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .team__figure {
+        box-shadow: 0px 1px 3px get-color(dark-shade), 0px 1px 1px get-color(dark-shade), 0px 2px 1px get-color(dark-shade);
+        border-radius: 0px 0px 4px 4px;
+        background-color: get-bg-color(basic-background);
+    }
+    .team__socials {
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .socials__icons--team{
+        fill: get-color(contact);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: background-color;
+      
+        &:hover,
+        &:focus {
+          background-color: get-color(action);
+          fill: get-color(light-text);
+        }
+    }
+}

@@ -1,0 +1,119 @@
+
+.lorem__size {
+    width: 70px;
+    height: 70px;
+}
+// ============= Mobile =============
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .lorem__background {
+        margin-top: 30px;
+        width: 450px;
+    }
+
+    .lorem__title {
+        font-family: get-font(primary);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        
+        width: 450px;
+        text-align: center;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        
+    }
+
+    .lorem__text {
+        width: 450px;
+    }
+
+    .section--lorem {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+    .lorem__background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f5f4fa;
+        height: 120px;
+    }
+}
+// ============= Tablet =============
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .lorem__background {
+        width: 354px;
+    }
+
+    .lorem {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .lorem__title {
+        font-family: get-font(primary);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        
+    }
+    .lorem__text {
+        width: 354px;
+    }
+
+    .section--lorem {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .lorem__background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f5f4fa;
+        height: 120px;
+    }
+}
+// ============= Desktop =============
+@media screen and (min-width: 1200px) {
+    .lorem__background {
+        width: 270px;
+     }
+
+    .lorem {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .section--lorem {
+        padding-bottom: 0px;
+    }
+
+    .lorem__title {
+        font-family: get-font(primary);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .lorem__text {
+        width: 270px;
+    }
+    .lorem__background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f5f4fa;
+        height: 120px;
+    }
+}

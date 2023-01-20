@@ -1,0 +1,16 @@
+.logo {
+    text-decoration: none;
+    color: get-color(action);
+    font-family: get-font(secondary);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.logo--header {
+    color: get-color(text);
+}
+
+.logo--footer {
+    color: get-color(light-text);
+}

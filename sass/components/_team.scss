@@ -1,0 +1,89 @@
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    &__title {
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+        letter-spacing: 0.03em;
+    }
+
+    &__name-title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        padding-top: 20px;
+        letter-spacing: 0.03em;
+    }
+    &__subtitle {
+        color: get-color(contact);
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    &__figure {
+        box-shadow: 0px 1px 3px get-color(dark-shade), 0px 1px 1px get-color(dark-shade), 0px 2px 1px get-color(dark-shade);
+        border-radius: 0px 0px 4px 4px;
+        background-color: get-bg-color(basic-background);
+    }
+    &__socials {
+        justify-content: center;
+        padding-top: 16px;
+        padding-bottom: 24px;
+    }
+
+
+    &__background {
+        background-color: get-bg-color(secondary-bg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+}
+.socials__icons--team{
+    width: 40px;
+    height: 40px;
+    fill: get-color(contact);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
+  
+    &:hover,
+    &:focus {
+      background-color: get-color(action);
+      fill: get-color(light-text);
+    }
+}
+
+// ============= Mobile =============
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .team {
+        flex-direction: column;      
+    }
+}
+
+// ============= Tablet =============
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .team {
+         flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+// ============= Desktop =============
+@media screen and (min-width: 1200px) {
+
+    .team {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
